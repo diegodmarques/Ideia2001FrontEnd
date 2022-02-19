@@ -1,0 +1,300 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;   
+    scroll-behavior: smooth;
+    scroll-margin-top: 50px;
+}
+
+a:hover{
+    opacity: 0.7;
+    color: #EF8910;
+}
+
+
+body::-webkit-scrollbar{
+    opacity: 10%;
+    width: 15px
+}
+body::-webkit-scrollbar-thumb{
+    background-color:#3A3A3A;
+    /* border-radius: 5px; */
+    /* opacity: 10%; */
+}
+/* body::-webkit-scrollbar-track{
+    background-color: #EF8910;
+} */
+
+header {
+    margin: 20px;
+}
+
+.active {
+    border-bottom: 2px solid  #EF8910;
+    border-radius: 2px;
+    outline: none;
+}
+
+.nav-list li{
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+} */
+
+
+
+ul li {
+    margin: 20px;  
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+
+.bem-vindo{
+    text-align: center;
+    /* margin: 40px; */
+
+}
+
+.bem-vindo span{
+    font-weight: bold;
+}
+
+
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+      
+}
+
+.user {
+    margin-right: 10px;
+    /* width: 90%; */
+}
+
+.link-decoration {
+    text-decoration: none;
+    color: black;
+}
+
+.color-link{
+    color: #EF8910;
+}
+
+.desconectar{
+    text-align: right;
+    font-size: small;
+}
+
+
+.bg-orange {
+  background-color: #EF8910;
+  width: 100%;
+  height: 100px;
+}
+
+.container {
+
+    position: relative;
+    bottom: 50px;
+    width: 75%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bg-grey{
+    
+    /* background: rgb(255,255,255); */
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(238, 238, 238) 100%);
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+
+    /* background: rgb(255,255,255); */
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,238) 100%);
+    border-radius: 20px;
+    border: 1px solid rgb(240, 240, 240);
+    transition: 300ms ease-in;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    border: 1px solid #ffab45;
+    transform: translateY(-5px);
+    box-shadow: 1px 2px 8px 1px rgb(236, 236, 236);
+    border-radius: 15px;
+}
+
+
+.icons {
+    transition: 300ms ease 100ms;
+}
+.icons:hover{
+    opacity: 90%;
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 40%;
+}
+ 
+.card span {
+    
+    position: relative;
+    top: 45px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.flex-column-evenly{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bg-black{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    color: white;
+    font-size: smaller;
+    margin: 16px;
+        
+}
+
+.color-orange{
+    color: #fc8415;
+}
+
+.container-logo{
+    width: 100px;
+}
+
+/* --------------Media Queries--------------------------------- */
+
+@media (max-width: 1200px){
+
+    .flex{
+    
+         
+        /* background-color: #EF8910; */
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+ 
+    
+    
+    .card {
+        width: 200px;
+        height: 200px;
+        /* margin: 20px; */
+    }
+
+    .bem-vindo{
+
+        margin: 50px;
+    }
+    
+    .card span {
+    
+        position: relative;
+        top: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    
+    }
+
+    .container{
+    width: 85%;
+    height: 600px
+    }
+
+    .nav-list li{
+
+        margin:5px;
+    }
+
+    .user {
+        margin: 10px 15px;
+        
+    }
+
+   
+
+    @media (max-width: 576px){
+
+        .flex{
+    
+         
+            /* background-color: #EF8910; */
+            flex-direction: column;
+        
+            align-items: center;
+            
+        }
+        
+
+        .flex-column{
+            align-items:  center;
+        }
+
+        .container{
+            width: 85%;
+            height: 100%;
+
+        }
+        .bem-vindo{
+    
+            margin: 20px;
+        }
+        
+        .card {
+            width: 150px;
+            height: 150px;
+    
+        }
+        
+        footer p {
+            text-align: center;
+        }
+    
+    }
+
+
+}
