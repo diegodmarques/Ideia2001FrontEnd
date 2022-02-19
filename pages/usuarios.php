@@ -6,45 +6,40 @@
     
 <body>
  
-<header class="flex ">
+<header class="flex">
         <div class="">
             <img class="logo" src="../imgs/logo.png" alt="">
         </div>
-       
-       
-        <nav class="nav-list navbar navbar-expand-sm navbar-light justify-content-center">
 
-    <button
-    class="navbar-toggler mt-2"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#toggleMobileMenu"
-    aria-controls="toggleMobileMenu"
-    aria-expanded="false"
-    aria-lable="Toggle navigation">
-    
-    <span class="navbar-toggler-icon" ></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="toggleMobileMenu">
-            <ul class="list-style flex navbar-nav mt-3">
-                <li><a class="" href="../pages/index.php" id="home">Home</a></li>
-                <li><a class="" href="../pages/eventos.php" id="eventos">Eventos</a></li>
-                <li><a class="active" href="../pages/usuarios.php" id="usuarios">Usuários</a></li>
-                <li><a class=" " href="../pages/relatorios.php" id="relatorios">Relatórios</a></li>
-            </ul>
+        <nav class="nav-list navbar navbar-expand-lg navbar-light justify-content-center">
+
+            <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="list-style navbar-nav">
+                    <li><a class="" href="../pages/index.php" id="home">Home</a></li>
+                    <li><a class="" href="../pages/eventos.php" id="eventos">Eventos</a></li>
+                    <li><a class="active" href="../pages/usuarios.php" id="usuarios">Usuários</a></li>
+                    <li><a class="" href="../pages/relatorios.php" id="relatorios">Relatórios</a></li>
+                </ul>
             </div>
-            
+
         </nav>
-            <div class="flex">
-                
-                <img class="user" src="../imgs/user.png" alt="">
-                
-                <div class="flex-column ">
-                    <span class="usuarios">Igor Gonçalves</span>
-                    <span class="desconectar"><a href="./index.php" class="color-link">Desconectar</a></span>
-                </div>
+
+        <div class="flex">
+
+            <img class="user" src="../imgs/user.png" alt="">
+
+            <div class="flex-column">
+                <span class="usuarios">Igor Gonçalves</span>
+                <span class="desconectar"><a href="./index.php" class="color-link">Desconectar</a></span>
             </div>
+        </div>
+
     </header>
 
     <main class="bg-grey">
